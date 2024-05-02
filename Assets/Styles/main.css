@@ -1,0 +1,36 @@
+main {
+  height: auto;
+}
+
+#home,
+#about,
+#project {
+  height: 100vh;
+  position: relative;
+}
+
+.project1,
+.about-img,
+.name {
+  position: absolute;
+  top: 50%; /* Move the element down 50% of its own height */
+  left: 50%; /* Move the element to the right 50% of its own width */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back up and left by half of its own size */
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+}
+
+.mancha {
+  transform: translate(-20%, -50%);
+}
+.mancha2 {
+  transform: translate(-100%, -60%);
+}
+
+.mokup {
+  position: absolute;
+  left: 15%;
+}
